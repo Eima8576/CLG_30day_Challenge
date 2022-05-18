@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Property</title>
+    <style>
+        div{
+            width: 200px;
+            height:300px;
+            background: navajowhite;
+            transition-property: width,background;
+            transition-duration: 2s;
+            transition-delay: 1s;
+            transition-timing-function: ease-in;
+        }
+        div:hover{
+            width: 500px;
+            font-family: 'Lucida Sans';
+            background: red;
+        }   
+    </style>
+</head>
+<body>
+    <div>
+        <h2>We are using CSS Transition </h2>
+    </div>
+</body>
+</html>
