@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid container</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .grid-container{
+            width:1000px;
+            height:600px;
+            background:rgb(109, 187, 251) ;
+            padding: 10px;
+        }
+        .item{
+            padding: 20px;
+            font-size: 1.4rem;
+            margin:20px;
+            background: rgb(240, 28, 215);
+            color: rgb(4, 4, 130);
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px 10px;
+        }
+        .grid-item-1{
+            height: 150px;
+        }
+        .grid-item-2{
+           /* height:200px;*/
+            grid-column-start:2;
+            grid-row: 1/span 2;
+        }
+        .grid-item-3{
+            height:180px;
+        }
+        .grid-item-4{
+            grid-column-start: 3;
+            height:130px;
+        }
+        .grid-item-5{
+            height: 150px;
+        }
+        .grid-item-6{
+            height: 150px;
+        }
+        .grid-item-1::first-line{
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .grid-item-2::first-line{
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .grid-item-3::first-line{
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .grid-item-4::first-line{
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .grid-item-5::first-line{
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .grid-item-6::first-line{
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        h1{
+            color: rgb(4, 4, 130);
+        }
+        p{
+            font-size: 1.4rem;
+        }
+     h2{
+            color: rgb(240, 28, 215);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>CSS Grid Layout</h1><br>
+        <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
+        </p><br>
+        <h2>Grid item property</h2><br>
+        <div class="grid-container">
+            <div class="grid-item-1 item">grid-column-start 
+               <br> <p>It specifies start column</p>
+            </div>
+            <div class="grid-item-2 item">
+    
+                grid-column-end <br>
+                <p>It specifies the end column</p>
+            </div>
+            <div class="grid-item-3 item">grid-row-start
+               <br> <p>It specifies the start row</p>
+            </div>
+            <div class="grid-item-4 item">grid-row-end <br>
+            <p>specifies the end row</p></div>
+            <div class="grid-item-5 item">grid-column <br>
+            <p>shorthand for 'grid-column-start' and 'grid-column end'</p></div>
+            <div class="grid-item-6 item">grid-row <br>
+            <p>shorthand for 'grid-row-start' and 'grid-row-end'</p></div>
+        </div>
+    </center>
+</body>
+</html>
