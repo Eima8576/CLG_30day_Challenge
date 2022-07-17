@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "montserrat";
+}
+body{
+    background: #333;
+}
+.container{
+    height: 100vh;
+    background: url(background.png) no-repeat center;
+    background-size: cover;
+    padding: 100px 40px;
+    text-align: center;
+    color: white;
+}
+.container p{
+    max-width: 600px;
+    margin: 40px auto;
+    font-size:20px;
+    font-weight: 300;
+}
+.email_box{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.email_box i{
+    background: #2f3542;
+    width: 40px;
+    line-height: 40px;
+}
+.ebox,.bbox{
+    border:none;
+    outline: none;
+}
+.ebox{
+    width:0px;
+    transition: 0.6s;
+}
+.email_box:hover > .ebox,.bbox:focus{
+    width: 260px;
+    padding: 0,10px;
+}
+.bbox{
+    background: #2f3542;
+    color: white;
+    padding:0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
